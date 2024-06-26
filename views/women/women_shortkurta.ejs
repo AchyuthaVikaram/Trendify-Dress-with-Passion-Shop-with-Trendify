@@ -1,0 +1,26 @@
+<% layout("boilerplate") -%>
+<body>   
+    <h2 style="text-align: center;">Choose From available Collections </h2>
+    <div class="collections-outer-container ml-3 mt-4">
+        <div class="collections-inner-container ">
+            <%for(let product of result) {%>
+                <a href="/women/shortkurta/<%=product.product_id%>"  style="text-decoration: none;">
+                    <div class="card" style="width: 18rem;height:35rem">
+                        <img src="<%=product.image%>" class="card-img-top" style="height: 21rem;"  alt="Image of Dress">
+                        <div class="card-body">
+                        <p class="card-text"> 
+                            <b><%=product.name%></b> <br>
+                            <i><%=product.description%> </i><br>
+                            &#8377;<%=product.price%> <br>
+                            <%=product.rating%> &#9733;<br>
+                            <%=product.available%> <span> available </span> <br>
+                        </p>
+                        </div>
+                    </div>
+                </a>
+            <%}%>
+        </div>
+    </div>
+    <br><br><br> <br>
+
+</body>

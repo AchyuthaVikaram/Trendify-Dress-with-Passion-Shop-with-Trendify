@@ -1,0 +1,277 @@
+.container-main{
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+  min-height:100vh;
+  flex:1;
+  /* background-image: url("https://files.123freevectors.com/wp-content/original/111482-light-color-blurred-background-vector.jpg");
+  background-size: cover; */
+  background-color:white;
+}
+
+
+/* navbar */
+.logo{
+    height:60px;
+    width:180px;
+    padding-top:0.12px;
+    /* border-right:2px solid rgb(240, 67, 67); */
+}
+
+nav{
+  height: 60px;
+  width: 100vw;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a{
+  text-decoration: none;
+  color: #464444;
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+}
+
+nav a:hover{
+  color: #ee07779f;
+}
+
+.nav-btns{
+  margin-right: 2rem;
+}
+
+/* .nav-btns a{
+  background-color: ;
+} */
+
+h1{
+  background-color: red;
+}
+
+a p{
+  text-decoration: none;
+  color: rgb(90, 88, 90);
+}
+a{
+  text-decoration: none;
+}
+
+
+
+
+/* hero section */
+
+.slider-container {
+    position: relative;
+    width: 100vw;
+    top:20px;
+    height: 520px;
+  }
+  
+  .slider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide {
+    flex: 0 0 100vw;
+    transition: transform 0.5s ease;
+  }
+  
+  .active {
+    transform: translateX(0%);
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+/* Add styles for dots */
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  
+
+
+/* main-container */
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  gap:3rem;
+  padding-left:2rem;
+}
+  /* menns-collecion */
+.mens-collection{
+  max-width:100vw;
+  height: 350px;
+}
+.cards-container{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+.image{
+  width:200px;
+  height:300px;
+  object-fit: cover;
+  margin-left:0.25rem ;
+  margin-bottom: 0.5rem; 
+  cursor: pointer; 
+}
+.cards-container a:hover{
+  box-shadow: 1px 1px 16px black;
+}
+
+/*footer*/
+.footer{
+  margin-top:3rem ;
+  padding-top:2rem;
+  /* border-top:2px solid pink; */
+  background-color: rgba(105, 106, 109, 0.1);
+  padding: 1rem;
+  text-align: center;
+  color: #333;
+  min-width: 100vw;
+}
+.one{
+  margin-right: 0.15rem;
+  padding-right: 0.45rem;
+  border-right:1px solid black ;
+}
+.links a{
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+/* //.cards-container */
+
+.collections-outer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+.collections-inner-container{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap:20px;
+  flex-wrap: wrap;
+}
+.card{
+  /* border: 2px solid gray; */
+  width:280px !important;
+  transition: all 0.2 ease;
+}
+.card:hover{
+  box-shadow: 1px 1px 5px black;
+}
+.collections-inner-container .image{
+ 
+  width: 280px;
+  height: 18rem;
+  /* object-fit: cover; */
+  /* object-position: left; */
+}
+span{
+  font-style: italic;
+  font-size: 12px;
+  color: green;
+}
+.anchor{
+  text-decoration: none;
+}
+.sizes{
+  display: flex;
+  gap:20px;
+}
+
+.size{
+  height:32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 2px solid black;
+  text-align: center;
+}
+
+/* login form */
+.button{
+  position: absolute;
+  top:890px;
+ 
+} 
+
+.hidden{
+  display: none;
+}
+.profile {
+  font-size: 1.9rem;
+
+}
+#profile{
+  height:90%;
+  /* border: 2px solid black; */
+  align-self: flex-end;
+}
+
+.back{
+  background-image: url("backimg.jpeg");
+  color: white;
+  font-size: 1rem;
+}
+
+.back:hover{
+  font-size: 0.85rem;
+  color: white;
+}
+
+
+#profile,#wishlist,#cart{
+  background: linear-gradient(to right,#ee07779f,rgb(237, 96, 83));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.err-msg{
+  font-family: "Roboto";
+  color: red;
+}

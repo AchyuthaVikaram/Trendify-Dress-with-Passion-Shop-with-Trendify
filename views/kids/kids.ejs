@@ -1,0 +1,36 @@
+<% layout("boilerplate") -%>
+<body>
+    <div class="mens-collection mb-5 mt-5"> 
+        <h2 class="mb-4">Categories to Bag Under Kid's Collection</h2> 
+        <div class="cards-container ">
+            <a href="/kids/dress">   <img  class="card-img-top image" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/2ab2f5b3-441a-430c-a605-2ac9d06007c01604906586315-28-Essentials-Dresses.jpg" srcset="" alt="..."></a>
+            <a href="/kids/tshirt">    <img  class="card-img-top image" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/c75a2039-4199-4174-b1b9-fecd30f7d3f91604906586359-29-Essentials-Tshirts_Tops.jpg" srcset="" alt="..."></a>
+            <a href="/kids/pant">    <img  class="card-img-top image" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/353fd453-6a17-45b9-b3da-a3dfd88121a31604906586547-33-Essentials-Valuepacks.jpg" srcset="" alt="..."></a>
+            <a href="/kids/ethnic">   <img  class="card-img-top image"  src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/efc4b19d-179f-4437-961c-839df50299a51604906586690-36-Essentials-Night_innerwear.jpg" srcset="" alt="..."></a>
+            <a href="/kids/nightwear"><img  class="card-img-top image"  src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/c22c8c4b-753a-4f90-8def-511d2ed6caf31604906586731-37-Essentials-EthnicWear.jpg" srcset="" alt="..."></a>
+        </div>
+    </div>
+    <br><br><br>
+    <h2>Our Products Include...</h2>
+    <br>
+    <div class="collections-outer-container ml-3 mt-4">
+        <div class="collections-inner-container ">
+            <%for(let product of result) {%>
+                <a href="/kids/dress/<%=product.product_id%>"  style="text-decoration: none;">
+                    <div class="card" style="width: 18rem;height:33rem">
+                        <img src="<%=product.image%>" class="card-img-top" style="height: 23rem;"  alt="Image of Dress">
+                        <div class="card-body">
+                        <p class="card-text"> 
+                            <b><%=product.name%></b> <br>
+                            <i><%=product.description%> </i><br>
+                            &#8377;<%=product.price%> <br>
+                            <%=product.rating%> &#9733;<br>
+                            <%=product.available%> <span> available </span> <br>
+                        </p>
+                        </div>
+                    </div>
+                </a>
+            <%}%>
+        </div>
+      <br><br><br><br>
+</body>

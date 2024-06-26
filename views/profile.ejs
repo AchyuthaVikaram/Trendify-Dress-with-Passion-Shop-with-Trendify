@@ -1,0 +1,20 @@
+<% layout("boilerplate") -%>
+<body>
+   
+    <div class="ml-5 mt-5" style="padding: 1rem;font-size: 1.5rem;">
+        <h2>User Profile:</h2> <br>
+        <pre>
+            Name      : <%=user.name%>
+            Email     : <%=user.email%>
+            Mobile No : <%=user.mobile_no%>
+            City      : <%=user.city%>
+            State     : <%=user.state%>
+            Country   : <%=user.country%>
+            Pincode   : <%=user.pincode%>
+        </pre>
+        <a href="/wishlist" class="btn back"> Wishlist</a> 
+        <a href="/cart" class="btn back">Go to Cart</a>
+        <br><br>
+        <a href="/order" class="btn back">View Your Orders</a>
+    </div>
+</body>

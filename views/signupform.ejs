@@ -1,0 +1,33 @@
+<% layout("boilerplate") -%>
+<body>
+     <div class="row">
+        <div class="col-8 offset-2">
+            <h2 class="mt-5">WelcomeBack To Trendify</h2><br>
+            <form method="POST" action="/signup" novalidate class="needs-validation">
+                <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" name="user[email]" placeholder="enter email" class="form-control" id="email" required>
+                      <div class="valid-feedback">looks good</div>
+                      <div class="invalid-feedback">Please enter a valid email</div>
+                </div>
+                <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" placeholder="enter ur password" name="user[password]" class="form-control" id="password" required>
+                      <div class="valid-feedback">looks good</div>
+                      <div class="invalid-feedback">Please enter a valid password</div>
+                </div>
+                <br><br><br>
+                <button class="btn back " style="display:absolute;top:415px;">login</button>
+                <br><br>
+          </form>
+        </div>
+     </div>
+</body>
+
+
+
+
+
+
+
+

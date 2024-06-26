@@ -1,0 +1,24 @@
+<% layout("boilerplate")-%>
+<body>
+    <h2 >&nbsp;&nbsp;&nbsp;Your Cart Includes...</h2>
+    <div class="collections-outer-container ml-3 mt-4">
+        <div class="collections-inner-container ">
+            <%for(let product of results) {%>
+                <a href="/cart/product/<%=product.order_id%>"  style="text-decoration: none;">
+                    <div class="card" style="width: 18rem;height:37rem">
+                        <img src="<%=product.image%>" class="card-img-top" style="height: 23rem;"  alt="Image of Dress">
+                        <div class="card-body">
+                        <p class="card-text"> 
+                            <b><%=product.name%></b> <br>
+                            <i><%=product.description%> </i><br>
+                            &#8377;<%=product.price%> <br>
+                            <%=product.rating%> &#9733;<br>
+                            <%=product.available%> <span> available </span> <br>
+                        </p>
+                        </div>
+                    </div>
+                </a>
+            <%}%>
+        </div>
+    </div> <br><br><br><br><br>
+</body>
